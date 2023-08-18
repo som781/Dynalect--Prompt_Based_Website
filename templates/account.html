@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+<div class="account-container">
+    <h1>Your Account</h1>
+    <div class="account-section">
+        <h2>Profile Information</h2>
+        <ul class="account-details">
+            <img class="profile-photo" src="https://png.pngtree.com/png-vector/20191110/ourmid/pngtree-avatar-icon-profile-icon-member-login-vector-isolated-png-image_1978396.jpg" alt="Profile Photo">
+            <li><strong>Name:</strong> John Doe </li>
+            <li><strong>Email:</strong> johndoe@example.com </li>
+            <li><strong>Phone:</strong> +1 123-456-7890 </li>
+            
+        </ul>
+    </div>
+    <div class="address-section">
+        <h2>Saved Address</h2>
+        <li> 123 Main St, City, Country <a href="#">Add Address</a> </li>   
+    </div>
+    <div class="account-section">
+        <h2>Payment Methods</h2>
+        <p>No saved payment methods. <a href="#">Add Payment Method</a></p>
+    </div>
+    <div class="account-section">
+        <h2>Order History</h2>
+        <p>No orders placed yet. <a href="/products">Shop Now</a></p>
+    </div>
+    <div class="account-section">
+        <button class="logout-button">Log Out</button>
+    </div>
+</div>
+{% endblock %}
